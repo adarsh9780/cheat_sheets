@@ -1,0 +1,29 @@
+def plot(features, data, get_deps=0, target=None, kind='scatter'):
+    if get_deps:
+        import matplotlib.pyplot as plt
+        import seaborn as sns
+
+    fig, ax = plt.subplots(1, 4, figsize=(20, 4))
+    col_count = 0
+    if kind == 'scatter':
+        for ftr in features:
+            sns.scatterplot(x=ftr, y='SalePrice', data=data, ax=ax[col_count])
+            col_count += 1
+        plt.tight_layout()
+        plt.show()
+        plt.close()
+    elif kind == 'count':
+        for ftr in features:
+            sns.countplot(x=ftr, data=data, ax=ax[col_count])
+            col_count += 1
+        plt.xticks(rotation=45)
+        plt.tight_layout()
+        plt.show()
+        plt.close()
+    else:
+        for ftr in features:
+            sns.barplot(x=ftr, y='SalePrice', data=data, ax=ax[col_count])
+            col_count += 1
+        plt.tight_layout()
+        plt.show()
+        plt.close()

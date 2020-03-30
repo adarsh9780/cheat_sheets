@@ -1,2 +1,11 @@
-For wifi, install `broadcom-wl-dkms`
+WIFI: For wifi, install `broadcom-wl-dkms`
 
+SUBSCRIBE: Subscribe to arch-announce for any manual updates required
+
+PACMAN_CACHE: Do not delete pacman-cache /var/cache/pacman/pkg
+
+IGNORE_PACKAGE: update /etc/pacman.conf, edit IgnorePkg line to include packages that you don't want to update(linux kernel)
+
+INSTALLING_PACKAGING: Never do pacman -Sy <package_name> instead of pacman -Syu <package_name>; run pacman -Syu before installing any package
+
+DOWNGRADE: Not recommened, use timeshift for backup
