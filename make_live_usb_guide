@@ -1,4 +1,3 @@
 STEP 1: use command `lsblk` to check the name of usb
 STEP 2: by default usb would be mounted, to make the usb live bootable, unmount it using `sudo umount /dev/sdx1`
 STEP 3: use `dd` command to flash the usb `sudo dd bs=4M if=/path/to/debian of=/path/to/usb`
- 
