@@ -10,7 +10,7 @@
     "draw_white_space": "none",
     "enable_tab_scrolling": false,
     "ensure_newline_at_eof_on_save": true,
-    "file_exclude_patterns":
+    "file_exclude_patterns":LogTransformer
     [
         "*.pyc",
         "*.pyo",
